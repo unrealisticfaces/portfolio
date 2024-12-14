@@ -35,10 +35,10 @@ form.addEventListener('submit', function(event) {
   const email = document.getElementById('email').value;
   const facebookLink = document.getElementById('facebook').value;
 
-  // Basic check (you can add more robust validation)
+ 
   if (facebookLink && !facebookLink.startsWith('https://www.facebook.com/')) {
     alert("Please enter a valid Facebook link starting with 'https://www.facebook.com/'");
-    return; // Stop form submission
+    return; 
   }
 
   // Firebase Integration Realtime Database
