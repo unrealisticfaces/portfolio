@@ -652,6 +652,21 @@ header.shadow{
     margin-left: 10px; 
 
 }
+#yt-btn{
+    background-color: #00dfff;
+    color: black !important;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; 
+}
+#yt-btn a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
 .modal {
     display: none; 
     position: fixed; 
