@@ -123,32 +123,6 @@ header.shadow{
     background-size: cover;
     gap: 1.5rem;
 }
-/* .story {
-    position: relative;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0rem, auto));
-    gap: 1.5rem;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.story::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(./images/slipknot7.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    filter: blur(15px); 
-    z-index: -5; 
-} */
 
 .story-text h2{
     font-size: 2rem;
@@ -180,19 +154,21 @@ header.shadow{
 }
 
 /* Clients */
-.heading{
-    text-align: center;
-}
-
 .heading h2{
+    text-align: center;
     font-size: 2rem;
     text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: 540px;
+    margin-right: 540px;
+    /* border-top: 4px solid var(--main-color); */
 }
 
 .characters{
     background: #ffff;
     border-bottom: 1px solid #CED4DA;
 }
+
 .characters-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,auto));
@@ -203,13 +179,22 @@ header.shadow{
 
 .characters-container .box{
     position: relative;
-    padding: 10px;
+    padding: 20px 20px 30px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 0.5rem;
     border: 1px solid #CED4DA;
     box-shadow: var(--box-shadow);
+    transition: 0.5s;
+}
+
+.characters-container .box:hover{
+    transform: scale(1.03);
+}
+
+.characters-container .box a{
+    color: #000000;
 }
 
 .characters-container img{
@@ -222,7 +207,13 @@ header.shadow{
 .characters-container .box h3{
     font-size: 1rem;
     font-weight: 600;
-    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+}
+
+.characters-container .box p{
+    font-size: 13px;
+    font-weight: 500;
     margin: 0.5rem 0 0.5rem;
     text-align: center;
 }
@@ -733,3 +724,4 @@ header.shadow{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
+
